@@ -1,9 +1,37 @@
 ﻿<Properties StartupConfiguration="{73BCCCC0-E7C4-449D-8022-DB774570E237}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluffyFriend/appsettings.json">
+    <Files>
+      <File FileName="FluffyFriend/Startup.cs" Line="32" Column="70" />
+      <File FileName="FluffyFriend/Data/Migrations/ApplicationDbContextModelSnapshot.cs" Line="18" Column="1" />
+      <File FileName="FluffyFriend/Data/Migrations/00000000000000_CreateIdentitySchema.cs" Line="14" Column="45" />
+      <File FileName="FluffyFriend/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" />
+      <File FileName="FluffyFriend/Data/ApplicationDbContext.cs" />
+      <File FileName="FluffyFriend/appsettings.Development.json" Line="1" Column="1" />
+      <File FileName="FluffyFriend/app.db" />
+      <File FileName="FluffyFriend/appsettings.json" Line="10" Column="6" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FluffyFriend" expanded="True" selected="True" />
+          <Node name="FluffyFriend" expanded="True">
+            <Node name="FluffyFriend" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="Areas" expanded="True">
+                <Node name="Identity" expanded="True">
+                  <Node name="Pages" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Data" expanded="True">
+                <Node name="Migrations" expanded="True">
+                  <Node name="00000000000000_CreateIdentitySchema.cs" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="appsettings.json" expanded="True" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
@@ -14,5 +42,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.FluffyFriend FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.FluffyFriend PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>

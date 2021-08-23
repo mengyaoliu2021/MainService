@@ -21,7 +21,8 @@ namespace FluffyFriend.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(100);
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -33,7 +34,7 @@ namespace FluffyFriend.Data.Migrations
 
                     b.Property<string>("NormalizedName")
                         .HasColumnType("TEXT")
-                        .HasMaxLength(256);
+                        .HasMaxLength(300);
 
                     b.HasKey("Id");
 
@@ -58,7 +59,8 @@ namespace FluffyFriend.Data.Migrations
 
                     b.Property<string>("RoleId")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(100);
 
                     b.HasKey("Id");
 
@@ -70,7 +72,8 @@ namespace FluffyFriend.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUser", b =>
                 {
                     b.Property<string>("Id")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(100);
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("INTEGER");
@@ -84,21 +87,21 @@ namespace FluffyFriend.Data.Migrations
                         .HasMaxLength(256);
 
                     b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("BIT");
 
                     b.Property<bool>("LockoutEnabled")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("BIT");
 
-                    b.Property<DateTimeOffset?>("LockoutEnd")
-                        .HasColumnType("TEXT");
+                    b.Property<string>("LockoutEnd")
+                        .HasColumnType("DATETIME");
 
                     b.Property<string>("NormalizedEmail")
                         .HasColumnType("TEXT")
-                        .HasMaxLength(256);
+                        .HasMaxLength(300);
 
                     b.Property<string>("NormalizedUserName")
                         .HasColumnType("TEXT")
-                        .HasMaxLength(256);
+                        .HasMaxLength(300);
 
                     b.Property<string>("PasswordHash")
                         .HasColumnType("TEXT");
@@ -107,13 +110,13 @@ namespace FluffyFriend.Data.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("PhoneNumberConfirmed")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("BIT");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("TEXT");
 
                     b.Property<bool>("TwoFactorEnabled")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("BIT");
 
                     b.Property<string>("UserName")
                         .HasColumnType("TEXT")
@@ -145,7 +148,8 @@ namespace FluffyFriend.Data.Migrations
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(100);
 
                     b.HasKey("Id");
 
@@ -158,18 +162,19 @@ namespace FluffyFriend.Data.Migrations
                 {
                     b.Property<string>("LoginProvider")
                         .HasColumnType("TEXT")
-                        .HasMaxLength(128);
+                        .HasMaxLength(150);
 
                     b.Property<string>("ProviderKey")
                         .HasColumnType("TEXT")
-                        .HasMaxLength(128);
+                        .HasMaxLength(150);
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("UserId")
                         .IsRequired()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(100);
 
                     b.HasKey("LoginProvider", "ProviderKey");
 
@@ -181,10 +186,12 @@ namespace FluffyFriend.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(100);
 
                     b.Property<string>("RoleId")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(100);
 
                     b.HasKey("UserId", "RoleId");
 
@@ -196,15 +203,16 @@ namespace FluffyFriend.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
                     b.Property<string>("UserId")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(100);
 
                     b.Property<string>("LoginProvider")
                         .HasColumnType("TEXT")
-                        .HasMaxLength(128);
+                        .HasMaxLength(150);
 
                     b.Property<string>("Name")
                         .HasColumnType("TEXT")
-                        .HasMaxLength(128);
+                        .HasMaxLength(150);
 
                     b.Property<string>("Value")
                         .HasColumnType("TEXT");
