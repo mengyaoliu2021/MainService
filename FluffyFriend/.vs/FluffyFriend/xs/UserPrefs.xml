@@ -1,14 +1,38 @@
 ﻿<Properties StartupConfiguration="{73BCCCC0-E7C4-449D-8022-DB774570E237}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="FluffyFriend/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FluffyFriend/wwwroot/css/site.css">
     <Files>
-      <File FileName="FluffyFriend/Startup.cs" Line="32" Column="70" />
-      <File FileName="FluffyFriend/Data/Migrations/ApplicationDbContextModelSnapshot.cs" Line="18" Column="1" />
-      <File FileName="FluffyFriend/Data/Migrations/00000000000000_CreateIdentitySchema.cs" Line="14" Column="45" />
-      <File FileName="FluffyFriend/Data/Migrations/00000000000000_CreateIdentitySchema.Designer.cs" />
+      <File FileName="FluffyFriend/Areas/Identity/Views/Main/Index.cshtml" Line="4" Column="2" />
+      <File FileName="FluffyFriend/Areas/Identity/Views/Main/Login.cshtml" />
+      <File FileName="FluffyFriend/Areas/Identity/Controllers/MainController.cs" />
+      <File FileName="FluffyFriend/Controllers/HomeController.cs" />
+      <File FileName="FluffyFriend/Models/AspNetUsersModel.cs" />
+      <File FileName="FluffyFriend/Startup.cs" />
+      <File FileName="FluffyFriend/Program.cs" />
+      <File FileName="FluffyFriend/Areas/Identity/Views/_ViewStart.cshtml" />
+      <File FileName="FluffyFriend/Areas/Identity/Views/Main/Register.cshtml" />
+      <File FileName="FluffyFriend/Areas/Identity/Models/LoginModel.cs" />
+      <File FileName="FluffyFriend/Views/_ViewStart.cshtml" />
+      <File FileName="FluffyFriend/Views/Shared/Error.cshtml" />
+      <File FileName="FluffyFriend/Views/Home/Index.cshtml" Line="17" Column="146" />
+      <File FileName="FluffyFriend/Views/Home/Privacy.cshtml" />
+      <File FileName="FluffyFriend/Views/Home/TestPage2.cshtml" />
+      <File FileName="FluffyFriend/Views/_ViewImports.cshtml" />
+      <File FileName="FluffyFriend/Views/Shared/_Layout.cshtml" Line="47" Column="36" />
+      <File FileName="FluffyFriend/Views/Shared/_LoginPartial.cshtml" />
+      <File FileName="FluffyFriend/Areas/Identity/Views/Manage/Profile.cshtml" Line="4" Column="56" />
+      <File FileName="FluffyFriend/Areas/Identity/Views/Manage/EditProfile.cshtml" />
+      <File FileName="FluffyFriend/Areas/Identity/Models/ProfileModel.cs" />
+      <File FileName="FluffyFriend/Data/Migrations/CreateIdentitySchema.cs" />
+      <File FileName="FluffyFriend/Areas/Identity/Controllers/ManageController.cs" Line="36" Column="1" />
       <File FileName="FluffyFriend/Data/ApplicationDbContext.cs" />
-      <File FileName="FluffyFriend/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="FluffyFriend/app.db" />
-      <File FileName="FluffyFriend/appsettings.json" Line="10" Column="6" />
+      <File FileName="FluffyFriend/Models/UserProfileModel.cs" />
+      <File FileName="FluffyFriend/Data/Migrations/ApplicationDbContextModelSnapshot.cs" />
+      <File FileName="FluffyFriend/Data/Migrations/CreateIdentitySchema.Designer.cs" />
+      <File FileName="FluffyFriend/Models/PostsModel.cs" />
+      <File FileName="FluffyFriend/appsettings.Development.json" />
+      <File FileName="FluffyFriend/appsettings.json" />
+      <File FileName="FluffyFriend/FluffyFriend.csproj" />
+      <File FileName="FluffyFriend/wwwroot/css/site.css" Line="68" Column="25" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,15 +45,27 @@
               </Node>
               <Node name="Areas" expanded="True">
                 <Node name="Identity" expanded="True">
-                  <Node name="Pages" expanded="True" />
+                  <Node name="Controllers" expanded="True" />
+                  <Node name="Models" expanded="True" selected="True" />
+                  <Node name="Views" expanded="True">
+                    <Node name="Manage" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
               <Node name="Data" expanded="True">
                 <Node name="Migrations" expanded="True">
-                  <Node name="00000000000000_CreateIdentitySchema.cs" expanded="True" />
+                  <Node name="CreateIdentitySchema.cs" expanded="True" />
                 </Node>
               </Node>
-              <Node name="appsettings.json" expanded="True" selected="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="css" expanded="True" />
+              </Node>
+              <Node name="appsettings.json" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -39,7 +75,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/MengyaoLiu/Documents/GitHub/MainService/FluffyFriend/FluffyFriend/Areas/Identity/Controllers/MainController.cs" relfile="FluffyFriend/Areas/Identity/Controllers/MainController.cs" line="74" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.FluffyFriend PreferredExecutionTarget="/Applications/Google Chrome.app" />

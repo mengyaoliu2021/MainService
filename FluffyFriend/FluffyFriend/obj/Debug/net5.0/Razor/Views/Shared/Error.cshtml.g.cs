@@ -26,8 +26,15 @@ using FluffyFriend.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/Users/MengyaoLiu/Documents/GitHub/MainService/FluffyFriend/FluffyFriend/Views/_ViewImports.cshtml"
+using BlazorFluentUI;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4ecc4d2bcad30a6aee551879bc7e7094ebb4184d", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9f16def605c1cbcd76d13b3189eb69fb45c3fc76", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2ae1d5e268643110d89c03e30d1a91d9bec3bf85", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

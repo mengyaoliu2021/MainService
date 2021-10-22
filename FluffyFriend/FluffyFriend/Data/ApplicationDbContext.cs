@@ -11,6 +11,12 @@ namespace FluffyFriend.Data
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
+
         }
+
+        public DbSet<FluffyFriend.Models.PostsModel> Posts { get; set; }
+        public DbSet<FluffyFriend.Models.UserProfileModel> UserProfiles { get; set; }
+        //public DbSet<FluffyFriend.Areas.Identity.Models.ProfileModel> Profile { get; set; }
+
     }
 }

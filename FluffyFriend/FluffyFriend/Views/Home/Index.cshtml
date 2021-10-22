@@ -1,8 +1,42 @@
-﻿@{
+﻿@using BlazorFluentUI
+@model IEnumerable<FluffyFriend.Models.PostsModel>
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="pb-3-main">
+
+
+    <div class="text-center">
+        <DefaultButton text="Standard" allowDisabledFocus disabled="Disabled" checked="Checked" />
+        @foreach (var item in Model)
+        {
+            <article class="PostArticle">
+                <header class="flex-start-box flex-display post-header">
+                    <div class="post-user-icon">
+                        <div class="user-icon" style="background-image: url(https://images.pexels.com/photos/3520421/pexels-photo-3520421.jpeg) "></div>
+                    </div>
+                    <div class="post-user-info">
+                        <div class="text-left-align">
+                            @Html.DisplayFor(modelItem => item.UserId)
+                        </div>
+                        <div class="text-left-align post-time">
+                            @Html.DisplayFor(modelItem => item.CreatedDate)
+                        </div>
+                    </div>
+                    <div>
+                        <button>...</button>
+                    </div>
+                </header>
+
+                <div class="post-content">
+                    <p class="text-left-align post-message">
+                        @Html.DisplayFor(modelItem => item.Message)
+                    </p>
+                    <div class="post-image" style="background-image: url(https://images.pexels.com/photos/3520421/pexels-photo-3520421.jpeg) "></div>
+                </div>
+            </article>
+        }
+    </div>
 </div>
+

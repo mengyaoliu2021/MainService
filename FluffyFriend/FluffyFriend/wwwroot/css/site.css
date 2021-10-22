@@ -7,9 +7,128 @@ a.navbar-brand {
   word-break: break-all;
 }
 
+.flex-start-box{
+    align-items: flex-start;
+}
+
+.flex-display{
+    display: flex;
+}
+
+.text-left-align{
+    text-align:left;
+}
+
+.post-time{
+    font-size: 0.8rem;
+    color: darkgray;
+}
+
+.post-user-icon {
+    //padding: 8px;
+    border-radius: 25px;
+    display: inline-block;
+    height: 45px;
+    width: 45px;
+    margin: 0 12px;
+    position: relative;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.user-icon {
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 25px;
+}
+
+.post-user-info{
+    width: 1000px;
+}
+
+
+
+.container-main {
+    .container;
+    max-width: 1540px;
+}
+
+.pb-3-main {
+    .pb-3;
+    margin: 0 450px;
+}
+
+/*User profile page*/
+
+.user-profile-wrapper{
+    display: flex;
+    background-color: gray;
+    max-width: 1800px;
+    margin: 0 10px;
+    padding: 20px;
+}
+
+.user-profile-basic{
+    width: 25%;
+    height:800px;
+    padding:0 60px;
+}
+
+.user-profile-right-section{
+    width: 75%;
+    min-height: 1000px;
+}
+
+.user-profile-basic-top{
+    width: 100%;
+    height:200px;
+    margin-top: 20px;
+    background-color: blue;
+}
+
+.user-profile-basic-middle {
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    padding: 0 15px;
+}
+
+.user-profile-photo-border {
+    background-color: white;
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 180px;
+    height: 180px;
+    border-radius: 150px;
+}
+
+.user-profile-photo {
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 170px;
+    height: 170px;
+    border-radius: 150px;
+}
+
+
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #0366d6;
 }
 
 .btn-primary {
@@ -22,6 +141,49 @@ a {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
+}
+
+.post-header {
+    padding: 15px 0;
+}
+
+.PostArticle {
+    /*padding: 15px;*/
+    margin: 0 0 30px 0;
+    border-radius: 2px;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.post-content{
+
+}
+
+.post-message{
+    padding: 0 15px;
+}
+
+.post-image-content {
+    /*padding: 8px;*/
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    /*margin: 12px;*/
+    position: relative;
+}
+
+.post-image {
+    background: #fff;
+    background-size: cover; /* <------ */
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 2px;
+    display: inline-block;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.2);
 }
 
 /* Sticky footer styles
@@ -69,3 +231,5 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
+

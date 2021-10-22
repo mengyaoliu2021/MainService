@@ -1,0 +1,50 @@
+﻿@model FluffyFriend.Models.UserProfileModel
+@section myScripts{
+
+    <script type="text/javascript" src="~/js/buttontest.js"></script>
+
+}
+
+<div class="user-profile-wrapper">
+    <div class="user-profile-basic" style="background-color:green">
+        <div class="user-profile-basic-top">
+            <div class="user-profile-photo-border">
+                <div class="user-profile-photo" style="background-image: url(https://images.pexels.com/photos/3520421/pexels-photo-3520421.jpeg) ">
+                </div>
+            </div>
+
+        </div>
+        <div class="user-profile-basic-middle">
+            @Html.DisplayFor(model => model.Name)
+        </div>
+
+    </div>
+
+    <div class="user-profile-right-section" style="background-color:red">
+        <div>
+            <dl>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Name)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Name)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.Photo)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.Photo)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.UserType)
+                </dt>
+                <dd>
+                    @Html.DisplayFor(model => model.UserType)
+                </dd>
+            </dl>
+
+        </div>
+    </div>
+</div>
+
+
